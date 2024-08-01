@@ -1,18 +1,31 @@
-<div>
-    <a rel="ar" href="Rocket.reality">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/STS120LaunchHiRes-edit1.jpg" width="100%">
-    </a>
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Your Page Title</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Open Graph meta tags -->
-  <meta property="og:title" content="BREAKING NEWS!!">
-  <meta property="og:description" content="A short description of your page.">
-  <meta property="og:image" content="https://ichef.bbci.co.uk/images/ic/1200x675/p07hmd43.jpg">
-  <meta property="og:url" content="https://www.apple.com">
-  <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+    <style>
+        .desktop-image {
+            display: block;
+        }
+
+        .mobile-image {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .desktop-image {
+                display: none;
+            }
+
+            .mobile-image {
+                display: block;
+            }
+        }
+    </style>
 </head>
+<body>
+    <img src="https://i.postimg.cc/wv1PNRjx/Image-215.jpg" alt="Desktop Image" class="desktop-image">
+    <img src="https://i.postimg.cc/wv1PNRjx/Image-215.jpg" alt="Mobile Image" class="mobile-image">
+</body>
+</html>
