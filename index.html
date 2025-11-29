@@ -1,48 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Example</title>
-    <style>
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .desktop-image {
-            display: block;
-        }
-
-        .mobile-image {
-            display: none;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .desktop-image {
-                display: none;
-            }
-
-            .mobile-image {
-                display: block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #eee;
+    }
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <img src="https://i.postimg.cc/wv1PNRjx/Image-215.jpg" alt="Desktop Image" class="desktop-image">
-    <img src="https://i.postimg.cc/wv1PNRjx/Image-215.jpg" alt="Mobile Image" class="mobile-image">
-    <h2>The life & times of a billionaire playboy</h2>
+  <header style="background: linear-gradient(135deg, #0d0d0d, #2a2a2a); color: #fff; padding: 6rem 2rem; text-align: center;">
+    <h1 style="font-size: 3.5rem; margin: 0;">massimodimatteo.com</h1>
+    <p style="font-size: 1.2rem; opacity: 0.75; margin-top: 1rem;">Welcome</p>
+  </header>
+
+  <section style="max-width: 1000px; margin: 4rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
+      <svg width="200" height="200" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="animation: float 3s ease-in-out infinite;">
+  <defs>
+    <radialGradient id="hullGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ff6f6f" />
+      <stop offset="100%" stop-color="#c62828" />
+    </radialGradient>
+    <radialGradient id="glassGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#90caf9" />
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="120" cy="200" rx="70" ry="18" fill="#bbb" opacity="0.35" />
+
+  <path d="M120 25 L185 95 L120 80 L55 95 Z" fill="url(#hullGrad)" stroke="#5a0000" stroke-width="4" />
+
+  <circle cx="120" cy="65" r="22" fill="url(#glassGrad)" stroke="#333" stroke-width="4" />
+
+  <rect x="110" y="80" width="20" height="45" rx="4" fill="#666" />
+
+  <path d="M110 125 L100 165 L120 150 L140 165 L130 125 Z" fill="#ffec80" stroke="#caa700" stroke-width="3" />
+</svg>
+
+<style>
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+</style>
     </div>
+    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
+      Graphic Placeholder 2
+    </div>
+    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
+      Graphic Placeholder 3
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 2rem; font-size: 0.9rem; color: #555;">
+    © 2025 massimodimatteo.com
+  </footer>
 </body>
 </html>
-
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Iain Kemp">
-    <meta property="og:description" content="The U.K.'s most eligible bachelor?">
-    <meta property="og:image" content="https://i.postimg.cc/dtG252Hk/IMG-2825.jpg">
-    <meta property="og:url" content="https://massimodimatteo.com">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="MassimoDiMatteo.com">
