@@ -49,46 +49,25 @@
     <p style="font-size: 1.2rem; opacity: 0.75; margin-top: 1rem;">Welcome</p>
   </header>
 
-  <section style="max-width: 1000px; margin: 4rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
-      <svg width="200" height="200" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="animation: float 3s ease-in-out infinite;">
-  <defs>
-    <radialGradient id="hullGrad" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#ff6f6f" />
-      <stop offset="100%" stop-color="#c62828" />
-    </radialGradient>
-    <radialGradient id="glassGrad" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#90caf9" />
-    </radialGradient>
-  </defs>
+  <section style="max-width: 900px; margin: 4rem auto; padding: 0 1rem; text-align: center;">
 
-  <ellipse cx="120" cy="200" rx="70" ry="18" fill="#bbb" opacity="0.35" />
+  <h2 style="margin-bottom: 2rem;">3D Model Preview</h2>
 
-  <path d="M120 25 L185 95 L120 80 L55 95 Z" fill="url(#hullGrad)" stroke="#5a0000" stroke-width="4" />
+  <model-viewer
+    src="model.usdz"
+    alt="3D model"
+    style="width: 100%; height: 400px;"
+    ar
+    ar-modes="quick-look"
+    interaction-prompt="auto"
+    camera-controls
+    auto-rotate
+    exposure="1.0">
+  </model-viewer>
 
-  <circle cx="120" cy="65" r="22" fill="url(#glassGrad)" stroke="#333" stroke-width="4" />
+</section>
 
-  <rect x="110" y="80" width="20" height="45" rx="4" fill="#666" />
-
-  <path d="M110 125 L100 165 L120 150 L140 165 L130 125 Z" fill="#ffec80" stroke="#caa700" stroke-width="3" />
-</svg>
-
-<style>
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-</style>
-    </div>
-    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
-      Graphic Placeholder 2
-    </div>
-    <div style="background: #fff; padding: 2rem; border-radius: 12px; height: 220px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #444;">
-      Graphic Placeholder 3
-    </div>
-  </section>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <footer style="text-align: center; padding: 2rem; font-size: 0.9rem; color: #555;">
     © 2025 massimodimatteo.com
